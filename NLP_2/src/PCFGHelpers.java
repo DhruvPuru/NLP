@@ -27,7 +27,7 @@ public class PCFGHelpers {
 			String[] inputToArray = input.split(" ");
 			String countType = inputToArray[1];
 			count = 0;
-			
+
 			if (countType.equals(UNARY_RULE)) {
 				String word = inputToArray[inputToArray.length - 1];
 				count = Integer.parseInt(inputToArray[0]);
@@ -35,7 +35,6 @@ public class PCFGHelpers {
 					count += wordToCount.get(word).intValue();
 				}
 				wordToCount.put(word, count);
-//				System.out.println(word + ": count: " + count);
 			}
 		}
 
@@ -58,10 +57,11 @@ public class PCFGHelpers {
 		while ((input = br.readLine()) != null) {
 			JSONArray arr = new JSONArray(input);
 			GTreeNode root = getChild(arr, wordToCount);
-			String sentenceWithRare = deconstructGTree(root);
-			System.out.println(sentenceWithRare);
+			String sentenceWithRare = deconstructGTree(root, false);
+			bufferedWriter.write(sentenceWithRare + "\n");
 		}
 		br.close();
+		bufferedWriter.close();
 	}
 
 	/*
@@ -75,10 +75,8 @@ public class PCFGHelpers {
 		// Check for unary rule or binary rule
 		if (arr.length() == 2) {
 			String word = arr.getString(1);
-//			System.out.println("Word is: " + word);
 			if ((wordToCount.containsKey(word) && wordToCount.get(word)
 					.intValue() < 5)) {
-//				System.out.println("RARE FOUND");
 				word = "_RARE_";
 			}
 			n.left = new GTreeNode(word);
@@ -91,15 +89,23 @@ public class PCFGHelpers {
 		return n;
 	}
 
-	private static String deconstructGTree(GTreeNode root) {
+	private static String deconstructGTree(GTreeNode root, boolean isLeft) {
+		String s = "";
+		
 		if (root == null)
 			return "";
+		else if (root.left == null && root.right == null) {
+			return "\"" + root.value + "\"";
+		}
 
-		String value = root.value;
-		String s = "";
-		s += "[\"" + value + "\"" + ", " + deconstructGTree(root.left)
-				+ deconstructGTree(root.right) + "]";
-
+		else if(!isLeft){
+			s += "[\"" + root.value + "\"" + ", " + deconstructGTree(root.left, true)
+					+ deconstructGTree(root.right, false) + "]";
+		}
+		else{
+			s += "[\"" + root.value + "\"" + ", " + deconstructGTree(root.left, true)
+					+ deconstructGTree(root.right, false) + "], ";
+		}
 		return s;
 	}
 }

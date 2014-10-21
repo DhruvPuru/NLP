@@ -1,4 +1,8 @@
-
+/**
+ * 
+ * @author Dhruv
+ *
+ */
 public class GTreeNode {
 
 	GTreeNode left;

@@ -12,7 +12,7 @@ import java.util.HashSet;
 public class Grammar {
 
 	private HashMap<String, Double> qParams;
-	private HashMap<String, HashSet<String>> rules;
+	private HashMap<String, HashSet<String>> binaryRules;
 	private HashMap<String, HashSet<String>> wordToTags;
 	private String countFile;
 
@@ -22,7 +22,7 @@ public class Grammar {
 
 	public Grammar(String countFile) throws IOException {
 		qParams = new HashMap<String, Double>();
-		rules = new HashMap<String, HashSet<String>>();
+		binaryRules = new HashMap<String, HashSet<String>>();
 		wordToTags = new HashMap<String, HashSet<String>>();
 		this.countFile = countFile;
 		this.computeQParamsAndRules();
@@ -33,7 +33,6 @@ public class Grammar {
 		FileReader in = new FileReader(countFile);
 		BufferedReader br = new BufferedReader(in);
 		HashMap<String, Integer> nTCounts = new HashMap<String, Integer>();
-		
 
 		String input;
 		String[] inputToArray;
@@ -55,62 +54,52 @@ public class Grammar {
 		while ((input = br.readLine()) != null) {
 			inputToArray = input.split(" ");
 			String countType = inputToArray[1];
-			
+
 			if (!countType.equals(NON_TERMINAL)) {
 				int ruleCount = Integer.parseInt(inputToArray[0]);
 				String rule = "";
 				String nonTerminal = inputToArray[2];
 
-				for(int i = 2; i < inputToArray.length; i++) {
+				for (int i = 2; i < inputToArray.length; i++) {
 					rule += inputToArray[i];
-					if(i < inputToArray.length - 1) {
+					if (i < inputToArray.length - 1) {
 						rule += " ";
 					}
 				}
 				int nTCount = nTCounts.get(nonTerminal);
-				double qValue = ((double)ruleCount)/((double)nTCount);
+				double qValue = ((double) ruleCount) / ((double) nTCount);
 				qParams.put(rule, qValue);
-				
-				//update set of rules 
+
+				// update set of rules
 				String rhs = "";
-				for(int i = 3; i < inputToArray.length; i++) {
+				for (int i = 3; i < inputToArray.length; i++) {
 					rhs += inputToArray[i];
-					if(i < inputToArray.length - 1) {
+					if (i < inputToArray.length - 1) {
 						rhs += " ";
 					}
 				}
-				
-//				System.out.println(nonTerminal + "-->" + rhs);
-				HashSet<String> rhsSet; 
-				if (rules.containsKey(nonTerminal)) {
-					rhsSet = rules.get(nonTerminal);
-					rhsSet.add(rhs);
+
+				if (countType.equals(BINARY_RULE)) {
+//					System.out.println(nonTerminal + "-->" + rhs);
+					HashSet<String> rhsSet;
+					if (binaryRules.containsKey(nonTerminal)) {
+						rhsSet = binaryRules.get(nonTerminal);
+						rhsSet.add(rhs);
+					} else {
+						rhsSet = new HashSet<String>();
+						rhsSet.add(rhs);
+						binaryRules.put(nonTerminal, rhsSet);
+					}
 				}
-				else {
-					rhsSet = new HashSet<String>();
-					rhsSet.add(rhs);
-					rules.put(nonTerminal, rhsSet);
-				}
-				
-				//Create a set of possible tags for every word in the corpus
+
+				// Create a set of possible tags for every word in the corpus
 				if (countType.equals(UNARY_RULE)) {
 					String word = inputToArray[3];
-					if(word.equals("."))
-						System.out.println(nonTerminal);
-					HashSet<String> tagSet; 
+					HashSet<String> tagSet;
 					if (wordToTags.containsKey(word)) {
-						if(word.equals(".")) {
-							System.out.println("wordToTags contains .");
-							System.out.println(nonTerminal);
-						}
 						tagSet = wordToTags.get(word);
 						tagSet.add(nonTerminal);
-					}
-					else {
-						if(word.equals(".")) {
-							System.out.println("wordToTags does NOT contain .");
-							System.out.println(nonTerminal);
-						}
+					} else {
 						tagSet = new HashSet<String>();
 						tagSet.add(nonTerminal);
 						wordToTags.put(word, tagSet);
@@ -120,14 +109,14 @@ public class Grammar {
 		}
 	}
 
-	public HashMap<String, HashSet<String>> getRules() {
-		return rules;
+	public HashMap<String, HashSet<String>> getBinaryRules() {
+		return binaryRules;
 	}
-	
+
 	public HashMap<String, Double> getQParams() {
 		return qParams;
 	}
-	
+
 	/**
 	 * 
 	 * @return set of possible tags for every word in the corpus

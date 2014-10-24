@@ -17,6 +17,7 @@ import org.json.JSONException;
 public class RareCountHelpers {
 
 	public static final String UNARY_RULE = "UNARYRULE";
+	public static final String RARE = "_RARE_";
 
 	public static HashMap<String, Integer> wordToCount(String countFile)
 			throws IOException {
@@ -82,7 +83,7 @@ public class RareCountHelpers {
 			String word = arr.getString(1);
 			if ((wordToCount.containsKey(word) && wordToCount.get(word)
 					.intValue() < 5)) {
-				word = "_RARE_";
+				word = RARE;
 			}
 			n.left = new GTreeNode(word);
 			n.right = null;

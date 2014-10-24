@@ -39,6 +39,7 @@ public class CKYTagger {
 			System.out.println(sentence);
 			sentenceToArr = sentence.split(" ");
 			int n = sentenceToArr.length;
+			
 			// every length 'l' corresponds to a row, and every 'i' then
 			// corresponds to a column. The stored hashmap element then contains
 			// pi values for any tag at
@@ -68,10 +69,10 @@ public class CKYTagger {
 
 			sentenceCount++;
 			System.out.println("--------------------------------------");
-//			//Recurisve pi-table building
-//			for (int l = 1; l < n - 1; l++) {
-//
-//			}
+			//Recurisve pi-table building
+			for (int l = 1; l < n - 1; l++) {
+
+			}
 		}
 	}
 

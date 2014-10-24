@@ -60,6 +60,7 @@ public class Grammar {
 				int ruleCount = Integer.parseInt(inputToArray[0]);
 				String rule = "";
 				String nonTerminal = inputToArray[2];
+
 				for(int i = 2; i < inputToArray.length; i++) {
 					rule += inputToArray[i];
 					if(i < inputToArray.length - 1) {
@@ -82,24 +83,34 @@ public class Grammar {
 //				System.out.println(nonTerminal + "-->" + rhs);
 				HashSet<String> rhsSet; 
 				if (rules.containsKey(nonTerminal)) {
-					rhsSet = wordToTags.get(nonTerminal);
+					rhsSet = rules.get(nonTerminal);
 					rhsSet.add(rhs);
 				}
 				else {
 					rhsSet = new HashSet<String>();
 					rhsSet.add(rhs);
-					wordToTags.put(nonTerminal, rhsSet);
+					rules.put(nonTerminal, rhsSet);
 				}
 				
 				//Create a set of possible tags for every word in the corpus
 				if (countType.equals(UNARY_RULE)) {
 					String word = inputToArray[3];
+					if(word.equals("."))
+						System.out.println(nonTerminal);
 					HashSet<String> tagSet; 
 					if (wordToTags.containsKey(word)) {
+						if(word.equals(".")) {
+							System.out.println("wordToTags contains .");
+							System.out.println(nonTerminal);
+						}
 						tagSet = wordToTags.get(word);
 						tagSet.add(nonTerminal);
 					}
 					else {
+						if(word.equals(".")) {
+							System.out.println("wordToTags does NOT contain .");
+							System.out.println(nonTerminal);
+						}
 						tagSet = new HashSet<String>();
 						tagSet.add(nonTerminal);
 						wordToTags.put(word, tagSet);

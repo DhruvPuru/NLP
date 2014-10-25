@@ -48,7 +48,7 @@ public class CKYTagger {
 		String sentence;
 		String[] sentenceToArr;
 		int sentenceCount = 0;
-		while (sentenceCount < 1 && (sentence = br.readLine()) != null) {
+		while ((sentence = br.readLine()) != null) {
 			sentenceToArr = sentence.split(" ");
 			int n = sentenceToArr.length;
 
@@ -64,14 +64,15 @@ public class CKYTagger {
 				word = sentenceToArr[i];
 				HashSet<String> tagSet;
 
+				String countWord = word;
 				if (!wordToCount.containsKey(word)) {
-					word = RARE;
+					countWord = RARE;
 				}
-				tagSet = wordToTags.get(word);
+				tagSet = wordToTags.get(countWord);
 
 				piValues = new HashMap<String, BackPointer>();
 				for (String tag : tagSet) {
-					String rule = tag + " " + word;
+					String rule = tag + " " + countWord;
 					Double q = qParams.get(rule);
 					BackPointer b = new BackPointer(q, i, word);
 					piValues.put(tag, b);
@@ -112,14 +113,7 @@ public class CKYTagger {
 							for (int s = i; s <= j - 1; s++) {
 								piCurrent = q * pi(i, s, yTag, piTable)
 										* pi(s + 1, j, zTag, piTable);
-
-								if (pi(i, s, yTag, piTable) > 0.0
-										&& pi(s + 1, j, zTag, piTable) > 0.0)
-									System.out
-											.println("We should have a non-zero pi");
-
-								// System.out.println(piCurrent);
-
+								
 								if (piCurrent > maxQ) {
 									maxQ = piCurrent;
 									bpRhs = rhs;
@@ -127,10 +121,7 @@ public class CKYTagger {
 								}
 							}
 						}
-
-						if (maxQ > 0)
-							System.out.println("q: " + maxQ + "split: "
-									+ splitPoint + "rhs: " + bpRhs);
+						
 						BackPointer b = new BackPointer(maxQ, splitPoint, bpRhs);
 						piValues.put(nonTerminal, b);
 					}
@@ -198,7 +189,6 @@ public class CKYTagger {
 		HashMap<String, BackPointer> piVals = piTable[j-i][i];
 		GTreeNode root = new GTreeNode(rootVal);
 		BackPointer bp = piVals.get(rootVal);
-		System.out.println(rootVal);
 		
 		String rhs = bp.rhs;
 		
@@ -220,7 +210,6 @@ public class CKYTagger {
 		}
 		else {
 			root.left = new GTreeNode(rhs);
-			System.out.println(rhs);
 		}
 		return root;
 	}

@@ -1,17 +1,17 @@
 
 public class BackPointer {
 
-	double q;
+	double pi;
 	int s;
 	String rhs;
 	
 	public BackPointer(double qParam, int splitPoint, String rhs) {
-		q = qParam;
+		pi = qParam;
 		s = splitPoint;
 		this.rhs = rhs;
 	}
 	
 	public String toString(){ 
-		return "q: " + q + ", s: " + s + ", rhs: " + rhs;
+		return "q: " + pi + ", s: " + s + ", rhs: " + rhs;
 	}
 }

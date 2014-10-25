@@ -95,7 +95,7 @@ public class RareCountHelpers {
 		return n;
 	}
 
-	private static String deconstructGTree(GTreeNode root, boolean isLeft) {
+	public static String deconstructGTree(GTreeNode root, boolean isLeft) {
 		String s = "";
 		
 		if (root == null)

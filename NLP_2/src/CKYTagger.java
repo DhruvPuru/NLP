@@ -17,17 +17,23 @@ public class CKYTagger {
 	public static final String RARE_COUNT_FILE = "cfg_rare.counts";
 	public static final String DEV_FILE = "parse_dev.dat";
 	private static final String RARE = RareCountHelpers.RARE;
+	private static final String PREDICTION_FILE = "prediction_file.dat";
+	
+	private static final String VERT_COUNT_FILE = "cfg_vert_rare.counts";
+	private static final String PREDICTION_VERT = "prediction_file_vert.dat";
 
 	public static void main(String[] args) throws IOException {
-		ckyTagger(DEV_FILE);
+		ckyTagger(DEV_FILE, PREDICTION_FILE, RARE_COUNT_FILE);
+		
+		ckyTagger(DEV_FILE, PREDICTION_VERT, VERT_COUNT_FILE);
 	}
 
-	public static void ckyTagger(String devFile) throws IOException {
+	public static void ckyTagger(String devFile, String predictionFile, String countFile) throws IOException {
 
-		Grammar g = new Grammar(RARE_COUNT_FILE);
+		Grammar g = new Grammar(countFile);
 
 		HashMap<String, Integer> wordToCount = RareCountHelpers
-				.wordToCount(RARE_COUNT_FILE);
+				.wordToCount(countFile);
 		HashMap<String, Double> qParams = g.getQParams();
 		HashMap<String, HashSet<String>> binaryRules = g.getBinaryRules();
 		HashMap<String, HashSet<String>> wordToTags = g.getTagSets();
@@ -35,19 +41,12 @@ public class CKYTagger {
 		FileReader in = new FileReader(devFile);
 		BufferedReader br = new BufferedReader(in);
 
-		File rareCounts = new File("prediction_file.dat");
+		File rareCounts = new File(predictionFile);
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(
 				rareCounts));
 
-		// for (String nT: binaryRules.keySet()) {
-		// for (String rhs: binaryRules.get(nT)) {
-		// System.out.println(nT + " --> " + rhs);
-		// }
-		// }
-
 		String sentence;
 		String[] sentenceToArr;
-		int sentenceCount = 0;
 		while ((sentence = br.readLine()) != null) {
 			sentenceToArr = sentence.split(" ");
 			int n = sentenceToArr.length;
@@ -166,10 +165,9 @@ public class CKYTagger {
 			root.right = constructGTree(rhs2, i2, j2, piTable);
 
 			String jsonFormat = RareCountHelpers.deconstructGTree(root, false);
-			System.out.println(jsonFormat);
-			
-			sentenceCount++;
+			bufferedWriter.write(jsonFormat + "\n");	
 		}
+		bufferedWriter.close();
 	}
 
 	private static double pi(int i, int j, String nonTerminal,

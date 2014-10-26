@@ -10,6 +10,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 
 /**
+ * This set of helper methods is used to replace rare words in the coprus with
+ * "_RARE_". Some methods like deconstructing a grammar tree into JSON format
+ * are also helpful later in the CKY algorithm.
  * 
  * @author Dhruv
  *
@@ -19,6 +22,14 @@ public class RareCountHelpers {
 	public static final String UNARY_RULE = "UNARYRULE";
 	public static final String RARE = "_RARE_";
 
+	/**
+	 * Map every word int the corpus to the number of times it appears. Return
+	 * this map.
+	 * 
+	 * @param countFile
+	 * @return
+	 * @throws IOException
+	 */
 	public static HashMap<String, Integer> wordToCount(String countFile)
 			throws IOException {
 
@@ -48,14 +59,14 @@ public class RareCountHelpers {
 		return wordToCount;
 	}
 
-	public static void rareCounter(String trainingFile,
+	public static void rareCounter(String trainingFile, String rareWordFile,
 			HashMap<String, Integer> wordToCount) throws IOException,
 			JSONException {
 
 		FileReader in = new FileReader(trainingFile);
 		BufferedReader br = new BufferedReader(in);
 
-		File rareCounts = new File("parse_train_rare.dat");
+		File rareCounts = new File(rareWordFile);
 		BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(
 				rareCounts));
 
@@ -95,21 +106,35 @@ public class RareCountHelpers {
 		return n;
 	}
 
+	/**
+	 * Deconstruct the grammar tree and return a String in JSON format as
+	 * required
+	 * 
+	 * @param root
+	 * @param isLeft
+	 * @return
+	 */
 	public static String deconstructGTree(GTreeNode root, boolean isLeft) {
 		String s = "";
-		
+
 		if (root == null)
 			return "";
-		else if (root.left == null && root.right == null) {
+
+		if (root.value.contains("^")) {
+			root.value = root.value.substring(0, root.value.indexOf('^'));
+		}
+
+		if (root.left == null && root.right == null) {
 			return "\"" + root.value + "\"";
 		}
 
-		else if(!isLeft){
-			s += "[\"" + root.value + "\"" + ", " + deconstructGTree(root.left, true)
+		else if (!isLeft) {
+			s += "[\"" + root.value + "\"" + ", "
+					+ deconstructGTree(root.left, true)
 					+ deconstructGTree(root.right, false) + "]";
-		}
-		else{
-			s += "[\"" + root.value + "\"" + ", " + deconstructGTree(root.left, true)
+		} else {
+			s += "[\"" + root.value + "\"" + ", "
+					+ deconstructGTree(root.left, true)
 					+ deconstructGTree(root.right, false) + "], ";
 		}
 		return s;

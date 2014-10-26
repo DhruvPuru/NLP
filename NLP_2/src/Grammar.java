@@ -5,6 +5,8 @@ import java.util.HashMap;
 import java.util.HashSet;
 
 /**
+ * The Grammar object represents a grammar in Chomsky Normal Form used in the
+ * CKY algorithm.
  * 
  * @author Dhruv
  *
@@ -70,7 +72,7 @@ public class Grammar {
 				double qValue = ((double) ruleCount) / ((double) nTCount);
 				qParams.put(rule, qValue);
 
-				// update set of rules
+				// update set of binary rules
 				String rhs = "";
 				for (int i = 3; i < inputToArray.length; i++) {
 					rhs += inputToArray[i];
@@ -80,7 +82,6 @@ public class Grammar {
 				}
 
 				if (countType.equals(BINARY_RULE)) {
-//					System.out.println(nonTerminal + "-->" + rhs);
 					HashSet<String> rhsSet;
 					if (binaryRules.containsKey(nonTerminal)) {
 						rhsSet = binaryRules.get(nonTerminal);
@@ -107,6 +108,7 @@ public class Grammar {
 				}
 			}
 		}
+		br.close();
 	}
 
 	public HashMap<String, HashSet<String>> getBinaryRules() {

@@ -75,6 +75,7 @@ public class RareCountHelpers {
 			JSONArray arr = new JSONArray(input);
 			GTreeNode root = getChild(arr, wordToCount);
 			String sentenceWithRare = deconstructGTree(root, false);
+//			System.out.println(sentenceWithRare);
 			bufferedWriter.write(sentenceWithRare + "\n");
 		}
 		br.close();
@@ -88,6 +89,7 @@ public class RareCountHelpers {
 	private static GTreeNode getChild(JSONArray arr,
 			HashMap<String, Integer> wordToCount) throws JSONException {
 		GTreeNode n = new GTreeNode(arr.getString(0));
+//		System.out.println(n.value);
 
 		// Check for unary rule or binary rule
 		if (arr.length() == 2) {
@@ -98,7 +100,6 @@ public class RareCountHelpers {
 			}
 			n.left = new GTreeNode(word);
 			n.right = null;
-
 		} else if (arr.length() == 3) {
 			n.left = getChild(arr.getJSONArray(1), wordToCount);
 			n.right = getChild(arr.getJSONArray(2), wordToCount);
@@ -119,10 +120,6 @@ public class RareCountHelpers {
 
 		if (root == null)
 			return "";
-
-		if (root.value.contains("^")) {
-			root.value = root.value.substring(0, root.value.indexOf('^'));
-		}
 
 		if (root.left == null && root.right == null) {
 			return "\"" + root.value + "\"";

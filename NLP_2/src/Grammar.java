@@ -1,5 +1,8 @@
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -26,7 +29,7 @@ public class Grammar {
 		qParams = new HashMap<String, Double>();
 		binaryRules = new HashMap<String, HashSet<String>>();
 		wordToTags = new HashMap<String, HashSet<String>>();
-		this.countFile = countFile;
+		this.countFile = "cfg_vert_rare.counts";
 		this.computeQParamsAndRules();
 	}
 
@@ -34,6 +37,7 @@ public class Grammar {
 
 		FileReader in = new FileReader(countFile);
 		BufferedReader br = new BufferedReader(in);
+		
 		HashMap<String, Integer> nTCounts = new HashMap<String, Integer>();
 
 		String input;
@@ -48,7 +52,8 @@ public class Grammar {
 			int count = Integer.parseInt(inputToArray[0]);
 			nTCounts.put(nonTerm, count);
 		}
-
+		
+		br.close();
 		in = new FileReader(countFile);
 		br = new BufferedReader(in);
 
@@ -56,7 +61,7 @@ public class Grammar {
 		while ((input = br.readLine()) != null) {
 			inputToArray = input.split(" ");
 			String countType = inputToArray[1];
-
+			
 			if (!countType.equals(NON_TERMINAL)) {
 				int ruleCount = Integer.parseInt(inputToArray[0]);
 				String rule = "";

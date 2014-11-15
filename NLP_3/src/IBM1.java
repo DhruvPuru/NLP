@@ -53,11 +53,12 @@ public class IBM1 {
 					fToProb = tParams.get(e);
 				} else {
 					fToProb = new HashMap<String, Double>();
+					tParams.put(e, fToProb);
 				}
-
+				
 				for (String f : fArr) {
 					fToProb.put(f, 0.0);
-				}
+				}				
 			}
 			count++;
 		}
@@ -78,10 +79,33 @@ public class IBM1 {
 			}
 		}
 	}
+	
+	public void printT() {
+		int count = 0;
+		for (String e: tParams.keySet()) {
+			System.out.println(e);
+			HashMap<String, Double> h = tParams.get(e); 
+			for (String f: h.keySet()) {
+				System.out.println(e + "-->" + f + ": " + h.get(f));
+			}
+			count++;
+			if (count > 15)
+				return;
+		}
+	}
+	
+	public void EM(int s) throws IOException {
+		tParams = EM1.emParams(s, eFile, fFile, tParams);
+	}
 
 	public static void main(String[] args) throws IOException {
 		IBM1 ibm1 = new IBM1("corpus.en", "corpus.de");
 		ibm1.eCounts();
+		long start = System.currentTimeMillis();
+		ibm1.EM(5);
+		long end = System.currentTimeMillis();
+		long time = (end - start) % 1000;
+		System.out.println(time);
 	}
 
 }

@@ -14,15 +14,6 @@ public class EM1 {
 		HashMap<String, Double> efCounts = new HashMap<String, Double>();
 		HashMap<String, Double> eCounts = new HashMap<String, Double>();
 
-		FileReader inE = new FileReader(eFile);
-		BufferedReader brE = new BufferedReader(inE);
-
-		FileReader inF = new FileReader(fFile);
-		BufferedReader brF = new BufferedReader(inF);
-
-		String inputF;
-		String inputE;
-
 		for (int i = 0; i < s; i++) {
 
 			// Set all counts to 0
@@ -37,6 +28,15 @@ public class EM1 {
 
 			System.out.println("number of E: " + eCounts.keySet().size());
 			
+			FileReader inE = new FileReader(eFile);
+			BufferedReader brE = new BufferedReader(inE);
+
+			FileReader inF = new FileReader(fFile);
+			BufferedReader brF = new BufferedReader(inF);
+			
+			String inputF;
+			String inputE;
+
 			while ((inputF = brF.readLine()) != null
 					&& (inputE = brE.readLine()) != null) {
 
@@ -75,6 +75,9 @@ public class EM1 {
 				}
 			}
 
+			brF.close();
+			brE.close();
+			
 			// Set tParams for this iteration
 			for (String e : tParams.keySet()) {
 				HashMap<String, Double> fToProb = tParams.get(e);
@@ -84,7 +87,7 @@ public class EM1 {
 				}
 			}
 		}
-
+		
 		return tParams;
 	}
 }

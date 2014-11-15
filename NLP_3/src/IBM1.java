@@ -106,6 +106,7 @@ public class IBM1 {
 		long end = System.currentTimeMillis();
 		long time = (end - start) % 1000;
 		System.out.println(time);
+		ibm1.printT();
 	}
 
 }

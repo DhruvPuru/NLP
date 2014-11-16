@@ -13,9 +13,9 @@ import java.util.TreeMap;
 
 public class IBM1 {
 
-	private String eFile;
-	private String fFile;
-	private HashMap<String, HashMap<String, Double>> tParams;
+	protected String eFile;
+	protected String fFile;
+	protected HashMap<String, HashMap<String, Double>> tParams;
 
 	public IBM1(String englishFile, String foreignFile) {
 		eFile = englishFile;
@@ -27,7 +27,7 @@ public class IBM1 {
 		return tParams;
 	}
 
-	public void eCounts() throws IOException {
+	public void computeUniformTParams() throws IOException {
 
 		FileReader inE = new FileReader(eFile);
 		BufferedReader brE = new BufferedReader(inE);
@@ -37,7 +37,6 @@ public class IBM1 {
 
 		String inputE;
 		String inputF;
-		int count = 0;
 
 		while ((inputF = brF.readLine()) != null
 				&& (inputE = brE.readLine()) != null) {
@@ -62,7 +61,6 @@ public class IBM1 {
 					fToProb.put(f, 0.0);
 				}
 			}
-			count++;
 		}
 
 		brE.close();
@@ -96,8 +94,8 @@ public class IBM1 {
 		}
 	}
 
-	public void EM(int s) throws IOException {
-		tParams = EM1.emParams(s, eFile, fFile, tParams);
+	public void EM1(int s) throws IOException {
+		EM.ibm1EmParams(s, eFile, fFile, tParams);
 	}
 
 	public void printBestTranslations(String devFile, int n) throws IOException {
@@ -167,8 +165,8 @@ public class IBM1 {
 	
 	public static void main(String[] args) throws IOException {
 		IBM1 ibm1 = new IBM1("corpus.en", "corpus.de");
-		ibm1.eCounts();
-		ibm1.EM(5);
+		ibm1.computeUniformTParams();
+		ibm1.EM1(5);
 		ibm1.printBestTranslations("devwords.txt", 10);
 		ibm1.printAlignments(20);
 	}

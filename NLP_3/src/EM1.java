@@ -21,12 +21,11 @@ public class EM1 {
 				efCounts.put(ef, 0.0);
 			}
 
-			System.out.println("number of EF: " + efCounts.keySet().size());
 			for (String e : eCounts.keySet()) {
 				eCounts.put(e, 0.0);
 			}
 
-			System.out.println("number of E: " + eCounts.keySet().size());
+			System.out.println("Iteration: " + i);
 			
 			FileReader inE = new FileReader(eFile);
 			BufferedReader brE = new BufferedReader(inE);
@@ -40,7 +39,7 @@ public class EM1 {
 			while ((inputF = brF.readLine()) != null
 					&& (inputE = brE.readLine()) != null) {
 
-				inputE = "NULL" + inputE;
+				inputE = "NULL " + inputE;
 				String[] eArr = inputE.split(" ");
 				String[] fArr = inputF.split(" ");
 

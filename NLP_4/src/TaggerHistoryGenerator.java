@@ -44,7 +44,7 @@ public class TaggerHistoryGenerator {
 	    	    
 	    String output;
 	    while ((output = pReader.readLine()).length() != 0) {
-	    	results.add(output);
+	    	results.add(output.replaceAll(" +", " "));
 	    }
 	    
 		return results;
@@ -62,9 +62,8 @@ public class TaggerHistoryGenerator {
 	    	    
 	    String output;
 	    while ((output = pReader.readLine()).length() > 0) {
-	    	results.add(output);
-	    }
-	    
+	    	results.add(output.replaceAll(" +", " "));
+	    }    
 		return results;
 	}
 }

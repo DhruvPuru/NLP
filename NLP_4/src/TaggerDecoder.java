@@ -38,7 +38,7 @@ public class TaggerDecoder {
 		return results;
 	}
 	
-	public String toSentence(ArrayList<String> inputStrings) {
+	public static String toSentence(ArrayList<String> inputStrings) {
 		
 		String sentence = "";
 		for (String s: inputStrings) {

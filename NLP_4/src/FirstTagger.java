@@ -4,8 +4,6 @@ import java.io.File;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 import java.util.HashMap;
 
@@ -13,8 +11,7 @@ public class FirstTagger {
 
 	protected String tagModel;
 	protected String devFile;
-
-	private HashMap<String, Double> featureWeights = new HashMap<String, Double>();
+	protected HashMap<String, Double> featureWeights = new HashMap<String, Double>();
 
 	public FirstTagger(String tM, String dFile) {
 		tagModel = tM;
@@ -55,7 +52,6 @@ public class FirstTagger {
 		String input;
 		ArrayList<String> results;
 		ArrayList<String> words = new ArrayList<String>();
-		ArrayList<String> scores = new ArrayList<String>();
 		String sentence = "";
 
 		while ((input = br.readLine()) != null) {
@@ -65,46 +61,10 @@ public class FirstTagger {
 				// Done reading this current sentence. Now process it.
 				sentence += "\r\n";
 				results = gen.getEnum(sentence);
-				HashMap<String, Double> featureMap = new HashMap<String, Double>();
+				ArrayList<String> scores = computeScores(results, words);
+				
 				String[] arr;
-
-				for (String s: results) {
-					String trimmed = s.replaceAll(" +", " ");
-					arr = trimmed.split(" ");
-					int wordIndex = Integer.parseInt(arr[0]) - 1;
-					String tag1 = arr[1];
-					String tag2 = arr[2];
-					String bigramFeature = "BIGRAM:" + tag1 + ":" + tag2;
-//					System.out.println(bigramFeature);
-					String tagFeature = "TAG:" + words.get(wordIndex) + ":" + tag2;
-					
-					double featureCount = 1.0;
-					if (featureMap.containsKey(bigramFeature)) {
-						featureCount += featureMap.get(bigramFeature);
-					}
-					featureMap.put(bigramFeature, featureCount);
-					
-					double score1;
-					double score2;
-					double score;
-					try {
-						score1 = featureWeights.get(bigramFeature);
-					}
-					catch (NullPointerException e) {
-						score1 = 0.0;
-					}
-					
-					try {
-						score2 = featureWeights.get(tagFeature);
-					}
-					catch (NullPointerException e) {
-						score2 = 0.0;
-					}
-					
-					score = score1 + score2;
-					String scoreString = (wordIndex+1) + " " + tag1 + " " + tag2 + " " + score;
-					scores.add(scoreString);	
-				}
+				//Use tagger_decoder.py
 				ArrayList<String> bestHistory = decoder.decodeHistory(scores);
 				for (String s : bestHistory) {
 					arr = s.split(" ");
@@ -117,7 +77,6 @@ public class FirstTagger {
 				}
 				
 				bufferedWriter.write("\r\n");
-				scores = new ArrayList<String>();
 				words = new ArrayList<String>();
 				sentence = "";
 			} else {
@@ -131,6 +90,44 @@ public class FirstTagger {
 		bufferedWriter.close();
 	}
 
+	public ArrayList<String> computeScores(ArrayList<String> results, ArrayList<String> words) {
+		String[] arr;
+		
+		ArrayList<String> scores = new ArrayList<String>();
+
+		for (String s : results) {
+
+			ArrayList<String> featureList = new ArrayList<String>();
+			String trimmed = s.replaceAll(" +", " ");
+			arr = trimmed.split(" ");
+			int wordIndex = Integer.parseInt(arr[0]) - 1;
+			String tag1 = arr[1];
+			String tag2 = arr[2];
+			String bigramFeature = "BIGRAM:" + tag1 + ":" + tag2;
+			String tagFeature = "TAG:" + words.get(wordIndex) + ":" + tag2;
+
+			featureList.add(bigramFeature);
+			featureList.add(tagFeature);
+
+			double score = 0.0;
+			double curScore;
+
+			for (String feature : featureList) {
+				try {
+					curScore = featureWeights.get(feature);
+				} catch (NullPointerException e) {
+					curScore = 0.0;
+				}
+				score += curScore;
+			}
+
+			String scoreString = (wordIndex + 1) + " " + tag1 + " " + tag2
+					+ " " + score;
+			scores.add(scoreString);
+		}
+		return scores;
+	}
+	
 	public static void main(String[] args) throws IOException {
 		FirstTagger ft = new FirstTagger("tag.model", "tag_dev.dat");
 		ft.readTagModel();

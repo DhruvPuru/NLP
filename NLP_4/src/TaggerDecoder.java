@@ -35,7 +35,6 @@ public class TaggerDecoder {
 	    while ((output = pReader.readLine()).length() > 0) {
 	    	results.add(output);
 	    }
-		
 		return results;
 	}
 	

@@ -1,7 +1,7 @@
-The NOUN
-complicated NOUN
+The DET
+complicated ADJ
 language NOUN
-in ADV
+in ADP
 the DET
 huge ADJ
 new ADJ
@@ -12,19 +12,19 @@ the DET
 fight NOUN
 . .
 
-The NOUN
+The DET
 Ways NOUN
 and CONJ
 Means NOUN
 Committee NOUN
-will NOUN
-hold NOUN
+will VERB
+hold VERB
 a DET
 hearing NOUN
-on ADV
+on ADP
 the DET
 bill NOUN
-next ADJ
+next ADP
 Tuesday NOUN
 . .
 
@@ -35,8 +35,8 @@ around ADV
 they PRON
 're VERB
 moving VERB
-even VERB
-faster VERB
+even ADV
+faster ADV
 . .
 
 Shearson NOUN
@@ -60,7 +60,7 @@ time NOUN
 the DET
 firms NOUN
 were VERB
-ready NOUN
+ready ADJ
 . .
 
 Ad NOUN
@@ -77,7 +77,7 @@ ADS NOUN
 : .
 
 `` .
-I NOUN
+I PRON
 'm VERB
 for ADP
 the DET
@@ -92,7 +92,7 @@ lost VERB
 yesterday NOUN
 . .
 
-I NOUN
+I PRON
 love NOUN
 'em NOUN
 both CONJ
@@ -100,30 +100,30 @@ both CONJ
 
 The DET
 above ADJ
-represents NOUN
-a X
-triumph X
+represents VERB
+a DET
+triumph NOUN
 of ADP
 either DET
 apathy NOUN
 or CONJ
-civility ADJ
+civility NOUN
 . .
 
 Not ADV
 his PRON
 autograph NOUN
 ; .
-power-hitter PRON
-McGwire VERB
-'s VERB
+power-hitter NOUN
+McGwire NOUN
+'s PRT
 . .
 
 They PRON
 went VERB
 a DET
 collective NOUN
-5-for-24 VERB
+5-for-24 NOUN
 here ADV
 , .
 with ADP
@@ -135,11 +135,11 @@ ribbies NOUN
 
 `` .
 That ADP
-'s VERB
-baseball VERB
+'s PRT
+baseball NOUN
 . .
 
-Average NOUN
+Average ADJ
 shares NOUN
 outstanding ADJ
 dropped VERB
@@ -147,7 +147,7 @@ to PRT
 75.8 NOUN
 million NUM
 from ADP
-82.1 NUM
+82.1 NOUN
 million NUM
 . .
 
@@ -155,7 +155,7 @@ Now ADV
 , .
 would VERB
 n't ADV
-that ADV
+that ADP
 be VERB
 a DET
 novelty NOUN
@@ -167,7 +167,7 @@ Stephenson NOUN
 Newport NOUN
 News NOUN
 , .
-Va NUM
+Va NOUN
 . .
 
 By ADP
@@ -178,20 +178,20 @@ selling NOUN
 was VERB
 at ADP
 near-panic NOUN
-fever VERB
+fever NOUN
 . .
 
 So ADP
 it PRON
 went VERB
 yesterday NOUN
-in ADV
+in ADP
 the DET
-trading VERB
+trading NOUN
 rooms NOUN
 of ADP
 London NOUN
-'s VERB
+'s PRT
 financial ADJ
 district NOUN
 . .
@@ -207,25 +207,25 @@ London NOUN
 
 Red NOUN
 figures NOUN
-on ADV
+on ADP
 the DET
 screens NOUN
 indicated NOUN
-falling NOUN
+falling VERB
 stocks NOUN
 ; .
-blue NOUN
+blue ADJ
 figures NOUN
 , .
-rising NOUN
+rising VERB
 stocks NOUN
 . .
 
 `` .
 It PRON
 's VERB
-very ADJ
-frustrating NOUN
+very ADV
+frustrating VERB
 . .
 '' .
 
@@ -242,7 +242,7 @@ shares NOUN
 
 we PRON
 're VERB
-in ADV
+in ADP
 for ADP
 a DET
 lot NOUN
@@ -264,29 +264,29 @@ the DET
 London NOUN
 market NOUN
 was VERB
-in ADV
+in ADP
 full ADJ
 retreat NOUN
 . .
 
 Conversation ADV
 was VERB
-subdued VERB
-as ADV
-most ADV
-patrons VERB
+subdued NOUN
+as ADP
+most ADJ
+patrons NOUN
 watched VERB
 the DET
 latest ADJ
 market NOUN
-statistics VERB
-on ADV
+statistics NOUN
+on ADP
 television NOUN
 . .
 
-Suddenly NOUN
+Suddenly ADV
 , .
-after ADV
+after ADP
 about ADV
 45 NUM
 minutes NOUN
@@ -307,7 +307,7 @@ London NOUN
 trading NOUN
 room NOUN
 went VERB
-wild NOUN
+wild ADJ
 . .
 
 Traders NOUN
@@ -327,7 +327,7 @@ Street NOUN
 `` .
 This DET
 is VERB
-panic VERB
+panic NOUN
 buying NOUN
 ! .
 '' .
@@ -366,10 +366,10 @@ union NOUN
 members NOUN
 . .
 
-European NOUN
+European ADJ
 investors NOUN
 have VERB
-further ADJ
+further ADV
 reason NOUN
 for ADP
 optimism NOUN
@@ -393,20 +393,20 @@ Zurich NOUN
 , .
 Madrid NOUN
 and CONJ
-Stockholm NUM
+Stockholm NOUN
 . .
 
 FRANKFURT NOUN
 : .
 
-The NOUN
+The DET
 index NOUN
 closed VERB
 at ADP
 1385.72 NOUN
 , .
-down ADP
-203.56 NOUN
+down ADV
+203.56 VERB
 points NOUN
 . .
 
@@ -414,9 +414,9 @@ Some DET
 of ADP
 West NOUN
 Germany NOUN
-'s VERB
-bluest VERB
-chips VERB
+'s PRT
+bluest NOUN
+chips NOUN
 took VERB
 some DET
 of ADP
@@ -430,13 +430,13 @@ LONDON NOUN
 
 Volume NOUN
 was VERB
-959.3 VERB
+959.3 NUM
 million NUM
 shares NOUN
 , .
 more ADV
 than ADP
-triple VERB
+triple NOUN
 recent ADJ
 levels NOUN
 . .
@@ -459,28 +459,28 @@ Pacific NOUN
 Corp NOUN
 . .
 
-The NOUN
+The DET
 loan NOUN
 growth NOUN
 offset NOUN
-continuing NOUN
+continuing VERB
 real-estate NOUN
 loan NOUN
 losses NOUN
-in ADV
+in ADP
 the DET
-depressed NOUN
+depressed ADJ
 Arizona NOUN
 market NOUN
 . .
 
-Non-interest ADV
-expense VERB
+Non-interest NOUN
+expense NOUN
 grew VERB
 only ADV
 4 NUM
 % NOUN
-in ADV
+in ADP
 the DET
 period NOUN
 . .
@@ -489,13 +489,13 @@ Mrs. NOUN
 Hills NOUN
 said VERB
 yesterday NOUN
-that ADV
+that ADP
 the DET
 dispute-settlement NOUN
 panel NOUN
 rejected VERB
 this DET
-Canadian NOUN
+Canadian ADJ
 government NOUN
 argument NOUN
 . .
@@ -509,28 +509,28 @@ Richstone NOUN
 . .
 
 -- .
-Dick NUM
-Emmons NUM
+Dick NOUN
+Emmons NOUN
 . .
 
 BSN NOUN
 currently ADV
 has VERB
-4.6 VERB
+4.6 NUM
 million NUM
 common ADJ
 shares NOUN
 outstanding ADJ
 . .
 
-The NOUN
+The DET
 market NOUN
 upheaval NOUN
 apparently ADV
 has VERB
 n't ADV
 triggered VERB
-any ADV
+any DET
 cash NOUN
 crunch NOUN
 -- .
@@ -539,41 +539,41 @@ yet ADV
 
 `` .
 That ADP
-'s VERB
+'s PRT
 good ADJ
 news NOUN
 , .
-because ADV
+because ADP
 we PRON
-all ADV
-swim VERB
-in ADV
+all DET
+swim NOUN
+in ADP
 this DET
 water NOUN
 . .
 '' .
 
 But CONJ
-markets VERB
+markets NOUN
 can VERB
 operate VERB
 with ADP
-greater NOUN
+greater ADJ
 or CONJ
-lesser VERB
-efficiency VERB
+lesser ADJ
+efficiency NOUN
 . .
 
 Options NOUN
 markets NOUN
 stopped NOUN
 trading NOUN
-in ADV
+in ADP
 many ADJ
 securities NOUN
 . .
 
-The NOUN
+The DET
 New NOUN
 York NOUN
 Stock NOUN
@@ -581,26 +581,26 @@ Exchange NOUN
 , .
 under ADP
 its PRON
-own ADJ
+own VERB
 rules NOUN
 , .
 remained VERB
-open VERB
+open ADJ
 . .
 
-As ADV
-liquidity VERB
-on ADV
-that ADV
-market VERB
-weakened ADV
+As ADP
+liquidity NOUN
+on ADP
+that DET
+market NOUN
+weakened NOUN
 , .
 prices NOUN
 fell VERB
-sharply VERB
+sharply ADV
 . .
 
-Traders ADV
+Traders NOUN
 can VERB
 vary VERB
 their PRON
@@ -609,14 +609,14 @@ and CONJ
 execute VERB
 their PRON
 orders NOUN
-in ADV
-any ADV
+in ADP
+any DET
 one NUM
 of ADP
 them PRON
 . .
 
-A NOUN
+A DET
 UNIFIED NOUN
 EUROPE NOUN
 poses NOUN
@@ -641,25 +641,25 @@ reimbursement NOUN
 loan NOUN
 repayment NOUN
 or CONJ
-child-care NOUN
+child-care ADJ
 help NOUN
 . .
 
 Some DET
 give VERB
-lump-sum VERB
+lump-sum NOUN
 incentives NOUN
 . .
 
 It PRON
 's VERB
-in ADV
+in ADP
 their PRON
-top VERB
+top NOUN
 five NUM
 `` .
-work VERB
-values NUM
+work NOUN
+values NOUN
 . .
 '' .
 
@@ -674,7 +674,7 @@ some DET
 losses NOUN
 . .
 
-The NOUN
+The DET
 loss NOUN
 of ADP
 more ADJ
@@ -682,7 +682,7 @@ customers NOUN
 is VERB
 the DET
 latest ADJ
-in ADV
+in ADP
 a DET
 string NOUN
 of ADP
@@ -691,7 +691,7 @@ problems NOUN
 
 Reluctant NOUN
 Advertisers NOUN
-Try NOUN
+Try VERB
 Soft-Sell NOUN
 Spots NOUN
 
@@ -701,7 +701,7 @@ spots NOUN
 can VERB
 be VERB
 too ADV
-soft VERB
+soft ADJ
 . .
 
 Retailer NOUN
@@ -709,7 +709,7 @@ Sees NOUN
 Pitfalls NOUN
 In ADP
 Environmental NOUN
-Push NOUN
+Push VERB
 
 But CONJ
 the DET
@@ -720,15 +720,15 @@ realizing VERB
 the DET
 pitfalls NOUN
 of ADP
-such DET
+such ADJ
 endorsements NOUN
 . .
 
-That ADP
+That DET
 does VERB
 n't ADV
-thrill ADV
-Procter VERB
+thrill VERB
+Procter NOUN
 & CONJ
 Gamble NOUN
 Co. NOUN
@@ -741,7 +741,7 @@ detergent NOUN
 . .
 
 Yet ADV
-parents ADV
+parents VERB
 demand VERB
 them PRON
 . .
@@ -752,33 +752,33 @@ Ends NOUN
 
 NEATNESS ADV
 does VERB
-count VERB
+count NOUN
 -- .
 at ADP
 least ADJ
-in ADV
+in ADP
 the DET
 grocery NOUN
-store VERB
+store NOUN
 . .
 
 She PRON
 has VERB
 also ADV
 served VERB
-on ADV
+on ADP
 several ADJ
-task ADV
-forces VERB
-on ADV
-acquired VERB
-immune ADV
-deficiency VERB
-syndrome ADV
+task NOUN
+forces NOUN
+on ADP
+acquired NOUN
+immune NOUN
+deficiency NOUN
+syndrome NOUN
 . .
 
-The NOUN
-continuing NOUN
+The DET
+continuing VERB
 series NOUN
 of ADP
 HUD NOUN
@@ -787,17 +787,17 @@ is VERB
 a DET
 sadly NOUN
 predictable NOUN
-result NOUN
+result VERB
 of ADP
 pork-barrel NOUN
 politics NOUN
 . .
 
-There ADV
+There DET
 's VERB
 nothing NOUN
 unusual NOUN
-about ADV
+about ADP
 business NOUN
 groups NOUN
 pushing NOUN
@@ -808,8 +808,8 @@ spending NOUN
 . .
 
 Yet ADV
-on ADV
-matters ADV
+on ADP
+matters VERB
 close VERB
 to PRT
 , .
@@ -825,14 +825,14 @@ taken VERB
 more ADV
 than ADP
 our PRON
-fair NOUN
+fair ADJ
 share NOUN
 . .
 
 Indirect NOUN
 subsidies NOUN
 , .
-through ADV
+through ADP
 the DET
 FHA NOUN
 , .
@@ -841,7 +841,7 @@ instance NOUN
 , .
 are VERB
 little ADV
-better ADJ
+better ADV
 . .
 
 Mr. NOUN
@@ -867,14 +867,14 @@ heaviest NOUN
 losses NOUN
 . .
 
-Hilton ADV
+Hilton NOUN
 lost VERB
 20 NUM
 % NOUN
 on ADP
 Friday NOUN
 ; .
-Paramount ADV
+Paramount NOUN
 lost VERB
 almost ADV
 11 NUM
@@ -886,14 +886,14 @@ not ADV
 . .
 
 Not ADV
-surprisingly VERB
+surprisingly ADV
 , .
 he PRON
 sometimes ADV
 bites VERB
 . .
 
-The NOUN
+The DET
 truth NOUN
 is VERB
 , .
@@ -905,27 +905,27 @@ than ADP
 economics NOUN
 . .
 
-The NOUN
+The DET
 index NOUN
 slid NOUN
 647.33 NOUN
 points NOUN
 , .
 or CONJ
-1.8 NOUN
+1.8 ADJ
 % NOUN
 , .
 on ADP
 Monday NOUN
 . .
 
-The NOUN
+The DET
 day NOUN
-'s VERB
+'s PRT
 decline NOUN
 was VERB
 generally ADV
-in PRT
+in ADP
 line NOUN
 with ADP
 analysts NOUN
@@ -936,7 +936,7 @@ predictions NOUN
 
 Declining VERB
 issues NOUN
-swamped NOUN
+swamped VERB
 advancers NOUN
 , .
 941-105 NOUN
@@ -953,7 +953,7 @@ shares NOUN
 , .
 compared VERB
 with ADP
-574.7 NUM
+574.7 NOUN
 million NUM
 Friday NOUN
 . .
@@ -964,20 +964,20 @@ market NOUN
 participants NOUN
 yesterday NOUN
 were VERB
-looking NOUN
+looking VERB
 ahead ADV
 nervously VERB
 to PRT
 Wall NOUN
 Street NOUN
 's VERB
-opening NOUN
+opening VERB
 . .
 
 `` .
 For ADP
 us PRON
-institutional NOUN
+institutional ADJ
 investors NOUN
 , .
 the DET
@@ -989,19 +989,19 @@ come VERB
 . .
 '' .
 
-Other NOUN
+Other ADJ
 fund NOUN
 managers NOUN
 were VERB
-similarly NOUN
-sanguine NOUN
+similarly ADV
+sanguine VERB
 . .
 
 Bangkok NOUN
 , .
-Manila NUM
+Manila NOUN
 , .
-Seoul NUM
+Seoul NOUN
 , .
 Taipei NOUN
 and CONJ
@@ -1013,9 +1013,9 @@ smaller ADJ
 losses NOUN
 . .
 
-Trading ADV
+Trading NOUN
 was VERB
-heavy NOUN
+heavy ADJ
 at ADP
 about ADV
 one NUM
@@ -1038,17 +1038,17 @@ to PRT
 million NUM
 shares NOUN
 from ADP
-143 NUM
+143 NOUN
 million NUM
 Friday NOUN
 . .
 
-The NOUN
+The DET
 Financial NOUN
 Times NOUN
 30-share ADJ
 index NOUN
-closed ADJ
+closed VERB
 79.3 NOUN
 points NOUN
 lower ADV
@@ -1059,30 +1059,30 @@ at ADP
 Volume NOUN
 more ADV
 than ADP
-doubled NOUN
+doubled VERB
 to PRT
 959.3 NOUN
 million NUM
 shares NOUN
 from ADP
-457.7 NUM
+457.7 NOUN
 million NUM
 Friday NOUN
 . .
 
 Prices NOUN
-on ADV
+on ADP
 the DET
 Frankfurt NOUN
 Stock NOUN
 Exchange NOUN
-tumbled NOUN
+tumbled VERB
 in ADP
-heavy NOUN
+heavy ADJ
 trading NOUN
 . .
 
-The NOUN
+The DET
 percentage NOUN
 change NOUN
 is VERB
@@ -1094,7 +1094,7 @@ Not ADV
 only ADJ
 Californians NOUN
 but CONJ
-all ADV
+all DET
 Americans NOUN
 would VERB
 pay NOUN
@@ -1104,7 +1104,7 @@ thing NOUN
 passed NOUN
 . .
 
-The NOUN
+The DET
 proposed NOUN
 initiative NOUN
 would VERB
@@ -1119,7 +1119,7 @@ of ADP
 % NOUN
 . .
 
-The NOUN
+The DET
 key NOUN
 here ADV
 is VERB
@@ -1131,7 +1131,7 @@ Attorney NOUN
 General NOUN
 John NOUN
 Van NOUN
-de NOUN
+de ADP
 Kamp NOUN
 . .
 
@@ -1142,7 +1142,7 @@ for ADP
 governor NOUN
 . .
 
-That ADP
+That DET
 's VERB
 also ADV
 the DET
@@ -1155,10 +1155,10 @@ election NOUN
 
 And CONJ
 it PRON
-allows NOUN
+allows VERB
 Mr. NOUN
 Van NOUN
-de NOUN
+de ADP
 Kamp NOUN
 to PRT
 get VERB
@@ -1168,12 +1168,12 @@ spending NOUN
 limits NOUN
 . .
 
-Of NOUN
+Of ADP
 course NOUN
 the DET
 state NOUN
-'s VERB
-liberals VERB
+'s PRT
+liberals NOUN
 are VERB
 not ADV
 yet ADV
@@ -1183,16 +1183,16 @@ unto VERB
 themselves PRON
 . .
 
-First NOUN
+First ADV
 , .
-there ADV
+there DET
 was VERB
 a DET
 death NOUN
 watch NOUN
 . .
 
-The NOUN
+The DET
 Nasdaq NOUN
 OTC NOUN
 index NOUN
@@ -1207,7 +1207,7 @@ It PRON
 's VERB
 just ADV
 a DET
-strange NOUN
+strange ADJ
 feeling NOUN
 . .
 
@@ -1217,35 +1217,35 @@ traders NOUN
 , .
 it PRON
 looked VERB
-like VERB
-disaster VERB
-on ADV
+like ADP
+disaster NOUN
+on ADP
 the DET
 9:30 NOUN
-a.m. VERB
+a.m. ADV
 opening VERB
-bell VERB
+bell NOUN
 . .
 
-The NOUN
+The DET
 Dow NOUN
 Jones NOUN
 Industrial NOUN
 Average NOUN
 opened VERB
-down ADP
-1.64 NOUN
-shortly NOUN
+down ADV
+1.64 VERB
+shortly ADV
 after ADP
 9:30 NOUN
 . .
 
-The NOUN
+The DET
 program NOUN
 traders NOUN
 were VERB
-in ADV
-there ADV
+in ADP
+there DET
 , .
 too ADV
 , .
@@ -1254,9 +1254,9 @@ course NOUN
 . .
 
 Trading NOUN
-in ADV
-Walt VERB
-Disney ADP
+in ADP
+Walt NOUN
+Disney NOUN
 Co. NOUN
 particularly ADV
 caught VERB
@@ -1265,12 +1265,12 @@ traders NOUN
 eyes NOUN
 . .
 
-The NOUN
+The DET
 stock NOUN
 opened VERB
 late ADV
 at ADP
-114 NOUN
+114 NUM
 1\/2 NUM
 , .
 down ADV
@@ -1280,17 +1280,17 @@ down ADV
 
 It PRON
 was VERB
-orderly VERB
+orderly NOUN
 . .
 
 We PRON
 put VERB
 some DET
 orders NOUN
-together NOUN
+together ADV
 . .
 
-There ADV
+There DET
 was VERB
 n't ADV
 a DET
@@ -1324,7 +1324,7 @@ approval NOUN
 
 But CONJ
 not ADV
-everybody ADV
+everybody VERB
 was VERB
 making VERB
 money NOUN
@@ -1332,10 +1332,10 @@ money NOUN
 
 Merck ADV
 is VERB
-one NOUN
+one NUM
 of ADP
 the DET
-most ADJ
+most ADV
 important ADJ
 stocks NOUN
 in ADP
@@ -1363,7 +1363,7 @@ issues NOUN
 Shares NOUN
 of ADP
 three NUM
-brokerage NUM
+brokerage NOUN
 firms NOUN
 rose VERB
 after ADP
@@ -1376,17 +1376,17 @@ Mr. NOUN
 Phelan NOUN
 expressed NOUN
 relief NOUN
-that ADV
+that ADP
 the DET
 market NOUN
-rebounded NOUN
+rebounded VERB
 yesterday NOUN
 . .
 
 They PRON
 used VERB
 their PRON
-judgment VERB
+judgment NOUN
 . .
 
 They PRON
@@ -1395,10 +1395,10 @@ n't ADV
 panic VERB
 during ADP
 the DET
-first ADV
-round VERB
+first ADJ
+round NOUN
 of ADP
-selling VERB
+selling NOUN
 this DET
 morning NOUN
 . .
@@ -1418,7 +1418,7 @@ on ADP
 Friday NOUN
 had VERB
 complained VERB
-about ADV
+about ADP
 the DET
 trading NOUN
 suspensions NOUN
@@ -1453,17 +1453,17 @@ committee NOUN
 '' .
 
 Congress NOUN
-previously NOUN
-cut NOUN
+previously ADV
+cut VERB
 six NUM
 airports VERB
 this DET
 year NOUN
 . .
 
-Senator ADV
-Pete VERB
-Domenici VERB
+Senator NOUN
+Pete NOUN
+Domenici NOUN
 calls VERB
 this DET
 effort NOUN
@@ -1476,20 +1476,20 @@ democracy NOUN
 . .
 '' .
 
-There ADV
+There DET
 were VERB
 n't ADV
-any ADV
-extraordinary VERB
-items ADV
+any DET
+extraordinary ADJ
+items NOUN
 . .
 
 `` .
 It PRON
 was VERB
-a X
+a DET
 pretty ADJ
-wild ADJ
+wild NOUN
 day NOUN
 . .
 
@@ -1499,7 +1499,7 @@ fact NOUN
 some DET
 economists NOUN
 contend NOUN
-that ADV
+that ADP
 the DET
 latest ADJ
 easing NOUN
@@ -1508,19 +1508,19 @@ last ADJ
 week NOUN
 . .
 
-The NOUN
+The DET
 reversal NOUN
 was VERB
-even VERB
+even ADV
 more ADV
-evident VERB
+evident ADJ
 among ADP
 shorter-term NOUN
 Treasury NOUN
 securities NOUN
 . .
 
-Investment-grade ADV
+Investment-grade ADJ
 corporate ADJ
 bonds NOUN
 , .
@@ -1537,15 +1537,15 @@ But CONJ
 as ADP
 Japanese NOUN
 stocks NOUN
-rebounded NOUN
+rebounded VERB
 , .
 Treasurys NOUN
-retreated NOUN
+retreated VERB
 and CONJ
 ended VERB
-just ADJ
-modestly NOUN
-higher ADV
+just ADV
+modestly VERB
+higher ADJ
 . .
 
 It PRON
@@ -1577,17 +1577,17 @@ Prices NOUN
 of ADP
 Treasury NOUN
 bonds NOUN
-tumbled NOUN
-in ADV
+tumbled VERB
+in ADP
 moderate ADJ
 to PRT
 active ADJ
 trading NOUN
 . .
 
-The NOUN
+The DET
 yield NOUN
-on ADV
+on ADP
 the DET
 benchmark NOUN
 issue NOUN
@@ -1608,8 +1608,8 @@ yesterday NOUN
 at ADP
 the DET
 government NOUN
-'s VERB
-weekly NOUN
+'s PRT
+weekly ADJ
 Treasury NOUN
 bill NOUN
 auction NOUN
@@ -1628,44 +1628,44 @@ bidding NOUN
 narrows VERB
 the DET
 investor NOUN
-'s VERB
-return VERB
-while NOUN
+'s PRT
+return NOUN
+while ADP
 lower ADJ
 bidding NOUN
 widens VERB
 it PRON
 . .
 
-Corporate NOUN
+Corporate ADJ
 Issues NOUN
 
-Investment-grade ADV
+Investment-grade ADJ
 corporate ADJ
 bonds NOUN
 ended VERB
-one NOUN
+one NUM
 to PRT
 1 NUM
 1\/2 NUM
-point VERB
-lower ADJ
+point NOUN
+lower ADV
 . .
 
-There ADV
+There DET
 were VERB
-no ADV
+no DET
 new ADJ
 issues NOUN
 . .
 
-Foreign NOUN
+Foreign ADJ
 Bonds NOUN
 
-Foreign NOUN
+Foreign ADJ
 bonds NOUN
 surged VERB
-as ADV
+as ADP
 the DET
 dollar NOUN
 weakened NOUN
@@ -1675,14 +1675,14 @@ major ADJ
 currencies NOUN
 . .
 
-The NOUN
+The DET
 yield NOUN
 was VERB
-5.245 VERB
+5.245 NOUN
 % NOUN
 . .
 
-Mortgage-Backed NOUN
+Mortgage-Backed ADJ
 Securities NOUN
 
 On ADP
@@ -1698,27 +1698,27 @@ as ADV
 5\/32 NUM
 . .
 
-There ADV
+There DET
 was VERB
-no ADV
-new-issue VERB
+no DET
+new-issue NOUN
 activity NOUN
 in ADP
 the DET
-derivative NOUN
+derivative ADJ
 market NOUN
 . .
 
 Professionals ADV
 dominated VERB
-municipal VERB
-trading VERB
-throughout VERB
+municipal ADJ
+trading NOUN
+throughout ADP
 the DET
 session NOUN
 . .
 
-Serial NOUN
+Serial ADJ
 bond NOUN
 yields NOUN
 were VERB
@@ -1734,39 +1734,39 @@ surged VERB
 40 NUM
 % NOUN
 to PRT
-250.17 VERB
+250.17 NOUN
 billion NUM
 yen NOUN
 from ADP
-178.61 NUM
+178.61 NOUN
 billion NUM
 . .
 
-Net NOUN
+Net ADJ
 income NOUN
 rose VERB
 11 NUM
 % NOUN
 to PRT
-29.62 VERB
+29.62 NOUN
 billion NUM
 yen NOUN
 from ADP
-26.68 NUM
+26.68 NOUN
 billion NUM
 . .
 
-Domestic NOUN
+Domestic ADJ
 leisure NOUN
 sales NOUN
 , .
 however ADV
 , .
 were VERB
-lower ADV
+lower ADJ
 . .
 
-Both CONJ
+Both DET
 of ADP
 the DET
 New NOUN
@@ -1782,11 +1782,11 @@ currency NOUN
 The DET
 old ADJ
 and CONJ
-revised ADJ
-numbers ADJ
+revised VERB
+numbers NOUN
 both CONJ
 include VERB
-over-allotment VERB
+over-allotment NOUN
 provisions NOUN
 . .
 
@@ -1802,7 +1802,7 @@ Burnham NOUN
 Lambert NOUN
 Inc. NOUN
 are VERB
-lead NOUN
+lead ADJ
 underwriters NOUN
 . .
 
@@ -1813,9 +1813,9 @@ the DET
 sole ADJ
 general ADJ
 partner NOUN
-in ADV
-Rose VERB
-Partners ADJ
+in ADP
+Rose NOUN
+Partners NOUN
 . .
 
 A. NOUN
@@ -1834,19 +1834,19 @@ shows NOUN
 
 If ADP
 you PRON
-guessed VERB
-black-and-white NUM
-snapshots NUM
+guessed NOUN
+black-and-white NOUN
+snapshots NOUN
 , .
 you PRON
 're VERB
-right ADJ
+right ADV
 . .
 
 And CONJ
 black-and-white NOUN
-photography VERB
-classes VERB
+photography NOUN
+classes NOUN
 are VERB
 crowded VERB
 with ADP
@@ -1856,21 +1856,21 @@ students NOUN
 Processing NOUN
 of ADP
 black-and-white NOUN
-commercial NOUN
+commercial ADJ
 film NOUN
 jumped VERB
 24 NUM
 % NOUN
-last VERB
+last ADJ
 year NOUN
 to PRT
 18.7 NOUN
 million NUM
-rolls NOUN
+rolls NUM
 . .
 
-Portrait ADV
-studios VERB
+Portrait NOUN
+studios NOUN
 have VERB
 also ADV
 latched VERB
@@ -1879,7 +1879,7 @@ the DET
 trend NOUN
 . .
 
-I NOUN
+I PRON
 show VERB
 it PRON
 to PRT
@@ -1888,19 +1888,19 @@ friends NOUN
 , .
 and CONJ
 they PRON
-all ADV
-say NUM
+all DET
+say VERB
 ` .
-wow NUM
+wow NOUN
 . .
 ' .
 
 It PRON
 is VERB
 n't ADV
-ordinary ADV
-like VERB
-color VERB
+ordinary ADJ
+like ADP
+color NOUN
 . .
 '' .
 
@@ -1908,20 +1908,20 @@ One NUM
 big ADJ
 obstacle NOUN
 is VERB
-that ADV
+that DET
 few ADJ
 drugstores NOUN
 develop VERB
 the DET
-film ADJ
-anymore NOUN
+film NOUN
+anymore ADV
 . .
 
 But CONJ
 for ADP
 photofinishers NOUN
 , .
-developing ADP
+developing VERB
 costs NOUN
 for ADP
 black-and-white NOUN
@@ -1930,7 +1930,7 @@ are VERB
 higher ADJ
 . .
 
-Other NOUN
+Other ADJ
 companies NOUN
 are VERB
 introducing NOUN
@@ -1939,13 +1939,13 @@ products NOUN
 . .
 
 `` .
-The NOUN
+The DET
 color NOUN
 print NOUN
 today NOUN
 is VERB
 far ADV
-superior VERB
+superior ADJ
 to PRT
 prints NOUN
 of ADP
@@ -1961,14 +1961,14 @@ say VERB
 the DET
 same ADJ
 with ADP
-black NOUN
+black ADJ
 and CONJ
-white NOUN
+white ADJ
 . .
 '' .
 
 `` .
-That ADP
+That DET
 's VERB
 the DET
 appeal NOUN
@@ -1977,50 +1977,50 @@ appeal NOUN
 It PRON
 also ADV
 rose VERB
-last VERB
+last ADJ
 Friday NOUN
 , .
 while ADP
 the DET
-stock VERB
-market VERB
-sagged NOUN
+stock NOUN
+market NOUN
+sagged VERB
 . .
 
-The NOUN
+The DET
 acquisition NOUN
 strengthens NOUN
 BSN NOUN
-'s VERB
+'s PRT
 position NOUN
-in ADV
+in ADP
 the DET
-European NOUN
+European ADJ
 pasta NOUN
 market NOUN
 . .
 
-The NOUN
+The DET
 dollar NOUN
 also ADV
 rebounded VERB
 , .
-while NOUN
+while ADP
 bond NOUN
 prices NOUN
-plummeted NOUN
+plummeted VERB
 and CONJ
 Treasury NOUN
 bill NOUN
 rates NOUN
-soared NOUN
+soared VERB
 . .
 
 Junk NOUN
 bonds NOUN
 also ADV
 recovered VERB
-somewhat NOUN
+somewhat ADV
 , .
 though ADV
 trading VERB
@@ -2033,43 +2033,43 @@ also ADV
 rose VERB
 . .
 
-The NOUN
+The DET
 dollar NOUN
 also ADV
 moved VERB
-higher ADV
+higher ADJ
 in ADP
 Tokyo NOUN
 . .
 
 Analysts NOUN
 are VERB
-downbeat VERB
-about ADV
+downbeat ADJ
+about ADP
 IBM NOUN
-'s VERB
+'s PRT
 outlook NOUN
 for ADP
 the DET
 next ADJ
 few ADJ
-quarters ADJ
+quarters NOUN
 . .
 
 Merrill NOUN
 Lynch NOUN
-'s VERB
-profit VERB
+'s PRT
+profit NOUN
 slid NOUN
 37 NOUN
 % NOUN
-in ADV
+in ADP
 the DET
-third NOUN
+third ADJ
 quarter NOUN
 . .
 
-The NOUN
+The DET
 moves NOUN
 may VERB
 help VERB
@@ -2085,12 +2085,12 @@ temporary-help NOUN
 market NOUN
 . .
 
-NCNB ADV
-'s VERB
-profit VERB
+NCNB NOUN
+'s PRT
+profit NOUN
 more ADV
 than ADP
-doubled NOUN
+doubled VERB
 . .
 
 Markets NOUN
@@ -2112,7 +2112,7 @@ Treasury NOUN
 index NOUN
 3393.51 NOUN
 , .
-off ADV
+off ADP
 
 Dollar NOUN
 : .
@@ -2144,10 +2144,10 @@ RATE NOUN
 % NOUN
 . .
 
-The NOUN
+The DET
 base NOUN
 rate NOUN
-on ADV
+on ADP
 corporate ADJ
 loans NOUN
 at ADP
@@ -2155,7 +2155,7 @@ large ADJ
 U.S. NOUN
 money NOUN
 center NOUN
-commercial NOUN
+commercial ADJ
 banks NOUN
 . .
 
@@ -2166,7 +2166,7 @@ RATE NOUN
 % NOUN
 . .
 
-The NOUN
+The DET
 charge NOUN
 on ADP
 loans NOUN
@@ -2182,7 +2182,7 @@ Reserve NOUN
 Bank NOUN
 . .
 
-The NOUN
+The DET
 charge NOUN
 on ADP
 loans NOUN
@@ -2256,7 +2256,7 @@ of ADP
 Calor NOUN
 . .
 
-The NOUN
+The DET
 group NOUN
 consists NOUN
 of ADP
@@ -2273,17 +2273,17 @@ American NOUN
 journalist NOUN
 now ADV
 is VERB
-standing ADJ
+standing NOUN
 trial NOUN
-in ADV
-Namibia VERB
+in ADP
+Namibia NOUN
 . .
 
-The NOUN
+The DET
 most ADV
-likely VERB
-winner ADJ
-will NOUN
+likely ADJ
+winner NOUN
+will VERB
 be VERB
 the DET
 Marxist-dominated NOUN
@@ -2293,35 +2293,35 @@ rebels NOUN
 
 Both DET
 South NOUN
-African NOUN
+African ADJ
 and CONJ
 SWAPO NOUN
 extremists NOUN
 are VERB
-intimidating VERB
-voters VERB
+intimidating NOUN
+voters NOUN
 . .
 
 Yesterday NOUN
 , .
 the DET
 stock NOUN
-market VERB
-'s VERB
-influence VERB
+market NOUN
+'s PRT
+influence NOUN
 at ADP
 first ADV
 created VERB
-nervousness VERB
+nervousness NOUN
 . .
 
 Trading NOUN
-in ADV
-cotton VERB
+in ADP
+cotton NOUN
 and CONJ
-sugar ADV
+sugar NOUN
 was VERB
-nervous VERB
+nervous ADJ
 and CONJ
 showed VERB
 small ADJ
@@ -2333,15 +2333,15 @@ Chicago NOUN
 , .
 grain NOUN
 and CONJ
-soybean ADP
+soybean NOUN
 prices NOUN
 rose VERB
 slightly ADV
 . .
 
 Silver NOUN
-performed NOUN
-quietly NOUN
+performed VERB
+quietly ADV
 . .
 
 ENERGY NOUN
@@ -2355,7 +2355,7 @@ Metal NOUN
 Exchange NOUN
 copper NOUN
 inventories NOUN
-last VERB
+last ADJ
 week NOUN
 declined VERB
 13,575 NOUN
@@ -2377,13 +2377,13 @@ prices NOUN
 declined VERB
 . .
 
-The NOUN
+The DET
 March NOUN
 contract NOUN
 was VERB
-off ADV
-0.32 ADV
-cent VERB
+off ADP
+0.32 NOUN
+cent NOUN
 a DET
 pound NOUN
 at ADP
@@ -2395,8 +2395,8 @@ FARM NOUN
 PRODUCTS NOUN
 : .
 
-Earlier NOUN
-in ADV
+Earlier ADV
+in ADP
 the DET
 session NOUN
 , .
@@ -2404,14 +2404,14 @@ the DET
 prices NOUN
 of ADP
 several ADJ
-soybean ADJ
+soybean NOUN
 contracts NOUN
-set NOUN
+set VERB
 new ADJ
 lows NOUN
 . .
 
-The NOUN
+The DET
 utility NOUN
 company NOUN
 currently ADV
@@ -2427,9 +2427,9 @@ Morgan NOUN
 Stanley NOUN
 & CONJ
 Co. NOUN
-will NOUN
+will VERB
 act NOUN
-as ADV
+as ADP
 the DET
 exclusive NOUN
 broker NOUN
@@ -2438,7 +2438,7 @@ the DET
 repurchase NOUN
 . .
 
-The NOUN
+The DET
 ratification NOUN
 follows VERB
 a DET
@@ -2450,29 +2450,29 @@ Philadelphia-based NOUN
 company NOUN
 . .
 
-The NOUN
+The DET
 unions NOUN
 and CONJ
 the DET
 company NOUN
-last VERB
+last ADJ
 week NOUN
-agreed NOUN
+agreed VERB
 to PRT
 mediation NOUN
 . .
 
-The NOUN
+The DET
 CWA NOUN
-represents NOUN
+represents VERB
 40,000 NOUN
 Nynex NOUN
 workers NOUN
 and CONJ
 the DET
 IBEW NOUN
-represents NOUN
-20,000 NOUN
+represents VERB
+20,000 NUM
 workers NOUN
 . .
 
@@ -2485,16 +2485,16 @@ least ADJ
 , .
 euphoria NOUN
 has VERB
-replaced VERB
-anxiety VERB
-on ADV
+replaced NOUN
+anxiety NOUN
+on ADP
 Wall NOUN
 Street NOUN
 . .
 
 Many ADJ
 went VERB
-bargain-hunting VERB
+bargain-hunting NOUN
 . .
 
 At ADP
@@ -2505,7 +2505,7 @@ seemed VERB
 as ADV
 if ADP
 history NOUN
-might NOUN
+might VERB
 repeat VERB
 itself PRON
 . .
@@ -2525,7 +2525,7 @@ World-wide NOUN
 trading NOUN
 was VERB
 generally ADV
-manageable NUM
+manageable VERB
 . .
 
 Many ADJ
@@ -2536,27 +2536,27 @@ a DET
 part NOUN
 in ADP
 yesterday NOUN
-'s VERB
+'s PRT
 comeback NOUN
 . .
 
-The NOUN
-relative NOUN
+The DET
+relative ADJ
 calm NOUN
 in ADP
 Tokyo NOUN
-proved NOUN
-little ADV
-comfort VERB
+proved VERB
+little ADJ
+comfort NOUN
 to PRT
 markets NOUN
-opening NOUN
+opening VERB
 up ADV
-in PRT
+in ADP
 Europe NOUN
 . .
 
-The NOUN
+The DET
 screen NOUN
 was VERB
 a DET
@@ -2588,28 +2588,28 @@ down ADV
 . .
 
 Shearson NOUN
-'s VERB
+'s PRT
 London NOUN
-trading VERB
+trading NOUN
 room NOUN
 went VERB
-wild NOUN
+wild ADJ
 . .
 
 `` .
 This DET
 is VERB
-panic VERB
+panic NOUN
 buying NOUN
 . .
 '' .
 
-German NOUN
+German ADJ
 and CONJ
-Dutch NOUN
+Dutch ADJ
 investors NOUN
-reportedly NOUN
-loaded NOUN
+reportedly ADV
+loaded VERB
 up ADV
 on ADP
 Kellogg NOUN
@@ -2617,13 +2617,13 @@ Co NOUN
 . .
 
 Not ADV
-everybody ADV
+everybody VERB
 was VERB
 making VERB
 money NOUN
 . .
 
-The NOUN
+The DET
 public NOUN
 is VERB
 still ADV
@@ -2635,14 +2635,14 @@ GERMANS NOUN
 RALLIED NOUN
 as ADP
 officials NOUN
-reportedly NOUN
-sought NOUN
+reportedly ADV
+sought VERB
 Honecker NOUN
-'s VERB
+'s PRT
 ouster NOUN
 . .
 
-Police ADV
+Police NOUN
 did VERB
 n't ADV
 intervene VERB
@@ -2650,14 +2650,14 @@ intervene VERB
 
 Mubarak ADV
 held VERB
-reconciliation VERB
-talks VERB
+reconciliation NOUN
+talks NOUN
 with ADP
 Gadhafi NOUN
 at ADP
 the DET
 Egyptian NOUN
-resort VERB
+resort NOUN
 of ADP
 Mersa NOUN
 Metruh NOUN
@@ -2668,12 +2668,12 @@ was VERB
 the DET
 Libyan NOUN
 leader NOUN
-'s VERB
+'s PRT
 first ADJ
 trip NOUN
 to PRT
 Egypt NOUN
-in ADV
+in ADP
 16 NUM
 years NOUN
 . .
@@ -2696,7 +2696,7 @@ Mr. NOUN
 Sim NOUN
 set NOUN
 growth NOUN
-as ADV
+as ADP
 his PRON
 first ADJ
 objective NOUN
